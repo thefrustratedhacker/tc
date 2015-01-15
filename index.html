@@ -10,26 +10,102 @@
 <h1 class = 'logo'>Time<a>lee</a></h1>
 <div id="nav">
 <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a id = 'current' href="stop_procrastination.html">Stop procrastination</a></li>
+  <li><a  href="index.html">Stop procrastinating</a></li>
   <li ><a href="about.html">About</a></li>
 </ul>
 </div>
-<form id = 'main_form'>
-    <h2 class="week_title">Week</h2><br>
-    <label for = 'monday'>Monday:</label>
-    <input type= 'text' id = 'monday'></input>
-    <label for = 'Tuesday'>Tuesday:</label>
-    <input type= 'text' id = 'Tuesday'></input>
-    <label for = 'Wednesday'>Wednesday:</label>
-    <input type= 'text' id = 'Wednesday'></input>
-    <label for = 'Thursday'>Thursday:</label>
-    <input type= 'text' id = 'Thursday'></input>
-    <label for = 'Friday'>Friday:</label>
-    <input type= 'text' id = 'Friday'></input>
-    <label for = 'Saturday'>Saturday:</label>
-    <input type= 'text' id = 'Saturday'></input>
-    <label for = 'Sunday'>Sunday:</label>
-    <input type= 'text' id = 'Sunday'></input>
+<!-- multistep form -->
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset>
+    <h2 class="fs-title">What are you not motivated to do ?</h2><br>
+    <textarea name="address" placeholder="Be specific"></textarea>
+    <input type="button" name="next" class="next action-button" value="Start" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Accept your procrastination</h2><br>
+    <textarea name="address" placeholder="Log your procrastination habits"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Set a goal</h2><br>
+    <textarea name="address" placeholder="Make it: Specific, Realistic, Meaningful"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Run a dash</h2>
+    <h3 class="fs-subtitle">Minimize this browser window and commit to your work for 5 min.</h3>
+    <h3 class="fs-subtitle"><a href='https://www.google.com/search?sourceid=chrome-psyapi2&ion=1&espv=2&ie=UTF-8&q=countdown%20timer' target="_blank"><u>Start a timer</u></a></h3>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Eliminate temptations and distractions</h2>
+    <h3 class="fs-subtitle">Also check: <a href = 'http://www.focalfilter.com/' target='_blank'><u>FocalFilter(Windows)</u></a> <a href = 'http://selfcontrolapp.com/' target = '_black'><u>SelfControl(Mac)</u></a></h3>
+    <textarea class = 'eliminate_box' name="address" placeholder="Write down the things that distracted you or prevented you from working towards your goal in the previous 5 min. (Eliminate or hide them !)"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Use negative pairing</h2>
+    <h3 class="fs-subtitle">Pair temptations and distractions with undesirable images.</h3>
+    <textarea name="address" placeholder="Imagine and write down a disastrous outcome."></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Make failure painful</h2><br>
+    <textarea name="address" placeholder="How will failure be painful ?"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Read an inspiring quote</h2><br>
+    <h3 class="fs-subtitle">Visit: <a href='http://www.brainyquote.com/quotes/topics/topic_inspirational.html' target = '_blank'>BrainyQuote</a></h3>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Write down your goals again</h2><br>
+    <textarea name="address"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Compare ideal state with current state</h2><br>
+    <textarea name="address" placeholder="Visualize and contrast the present and the future"></textarea>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Create routines and habits</h2>
+    <h3 class="fs-subtitle">Adjust your routine to achive your goals and keep track of your progress.</h3>
+    <input type="button" name="previous" class="previous action-button" value="Previous" />
+    <input type="button" name="next" class="next action-button" value="Next" />
+  </fieldset>
+  <fieldset>
+    <h2 class="fs-title">Start Working !</h2>
+    <h3 class="fs-subtitle">By now you must be able to work again.Feel free to go follow the steps again if needed.</h3>
+    <h3 class="fs-subtitle">"Believe you can and you're halfway there." Theodore Roosevelt</h3>
+    <h3 class="fs-subtitle">*Based on <a href='http://www.alexvermeer.com/getmotivated' target = '_blank'>Alex Vermeer's poster</a></h3>
+  </fieldset>
 </form>
+<script src='js.js' type='text/javascript'></script>
 </body>
